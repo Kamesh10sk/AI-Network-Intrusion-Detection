@@ -1,0 +1,81 @@
+{
+  "using_sample_data": false,
+  "rows": 2520798,
+  "class_balance": {
+    "benign": 2095057,
+    "attack": 425741,
+    "attack_rate_pct": 16.89
+  },
+  "primary_model": "Random Forest",
+  "threshold": 0.5,
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.9601555061885115,
+      "precision": 0.8240491702030164,
+      "recall": 0.9715201766336261,
+      "f1": 0.8917287397458148,
+      "false_positive_rate": 0.04215392399263028,
+      "confusion_matrix": [
+        [
+          401349,
+          17663
+        ],
+        [
+          2425,
+          82723
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.9984270866391621,
+      "precision": 0.991848681678775,
+      "recall": 0.99889603983652,
+      "f1": 0.9953598867180414,
+      "false_positive_rate": 0.0016682099796664536,
+      "confusion_matrix": [
+        [
+          418313,
+          699
+        ],
+        [
+          94,
+          85054
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.9985282450015868,
+      "precision": 0.994272931696805,
+      "recall": 0.9970287029642505,
+      "f1": 0.9956489104684165,
+      "false_positive_rate": 0.0011670310158181628,
+      "confusion_matrix": [
+        [
+          418523,
+          489
+        ],
+        [
+          253,
+          84895
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "Packet Length Variance": 0.0699,
+    "Bwd Packet Length Std": 0.067,
+    "Avg Bwd Segment Size": 0.0659,
+    "Average Packet Size": 0.0602,
+    "Packet Length Std": 0.055,
+    "Max Packet Length": 0.0478,
+    "Bwd Packet Length Max": 0.0448,
+    "Fwd Packet Length Max": 0.0365,
+    "Total Length of Bwd Packets": 0.0344,
+    "Packet Length Mean": 0.031,
+    "Bwd Packet Length Mean": 0.0295,
+    "Subflow Bwd Bytes": 0.029,
+    "Init_Win_bytes_backward": 0.0256,
+    "Fwd Packet Length Mean": 0.0236,
+    "Total Length of Fwd Packets": 0.0221
+  }
+}
